@@ -16,7 +16,7 @@ $(function() {
         }
         var descriptionText = "<p>" + description + "</p><p>" + inventoryText + "</p>";
         $("#product-" + id).html(descriptionText);
-        var orders = product["orders"];
+        var orders = data["orders"];
         var orderList = "";
         orders.forEach(function(order) {
           orderList += '<li class="js-order" data-id="' + order["id"] + '">' + order["id"] + ' - ' + order["created_at"] + '</li>';
